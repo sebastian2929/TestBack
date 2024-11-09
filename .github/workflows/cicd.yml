@@ -36,5 +36,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: springboot-app-test
-          publish-profile: ${{ secrets.azureWebAppPublishProfile }}
+          publish-profile: ${{ secrets.BACKACTIONSECRET }}
           package: '*.jar'
