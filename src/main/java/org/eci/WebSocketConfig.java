@@ -18,7 +18,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
-        registry.addEndpoint("/ws")
+        registry.addEndpoint("/wss")
                 .setAllowedOriginPatterns("https://intento100front-beh9fwa0ebbgcfff.canadacentral-01.azurewebsites.net") // Cambia esto por tu URL de frontend
                 .withSockJS();
     }
