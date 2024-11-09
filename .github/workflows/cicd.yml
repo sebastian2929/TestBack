@@ -35,6 +35,6 @@ jobs:
       - name: Deploy to Azure App Service
         uses: azure/webapps-deploy@v2
         with:
-          app-name: springboot-app-test
+          app-name: intento100
           publish-profile: ${{ secrets.BACKACTIONSECRET }}
           package: '*.jar'
